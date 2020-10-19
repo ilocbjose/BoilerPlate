@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="MBl-zT-el1">
+            <objects>
+                <navigationController id="Vvo-Hc-sBk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nwr-83-WwC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="N1R-mx-cwZ" kind="relationship" relationship="rootViewController" id="fEC-ta-cT9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULT-ty-57M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="-127"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -15,17 +31,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splash Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAZ-ZT-0gg">
+                                <rect key="frame" x="76" y="422.5" width="262.5" height="51.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iAZ-ZT-0gg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dKh-4D-OuG"/>
+                            <constraint firstItem="iAZ-ZT-0gg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v5D-SR-N3K"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <segue destination="N1R-mx-cwZ" kind="show" identifier="goToLogin" id="ZY0-Hf-8gs"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="79"/>
+            <point key="canvasLocation" x="-2219" y="719"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="pTz-rd-Wyg">
@@ -50,16 +75,29 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt2-dL-Shn">
                                         <rect key="frame" x="0.0" y="228" width="354" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Login"/>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-rx-ciW">
+                                <rect key="frame" x="100" y="776" width="214" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="yff-pe-t62"/>
+                                </constraints>
+                                <state key="normal" title="Registro"/>
+                                <connections>
+                                    <segue destination="fvG-kK-EH3" kind="show" id="2XX-a3-6D0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5fj-e3-uqW"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="P03-rx-ciW" firstAttribute="leading" secondItem="5fj-e3-uqW" secondAttribute="leading" constant="100" id="6M2-db-Ge2"/>
+                            <constraint firstItem="5fj-e3-uqW" firstAttribute="bottom" secondItem="P03-rx-ciW" secondAttribute="bottom" constant="30" id="C41-JK-20o"/>
                             <constraint firstItem="QUd-3s-pUX" firstAttribute="centerX" secondItem="rPV-em-h04" secondAttribute="centerX" id="FI3-eQ-4a9"/>
                             <constraint firstItem="5fj-e3-uqW" firstAttribute="trailing" secondItem="QUd-3s-pUX" secondAttribute="trailing" constant="30" id="LtB-29-kFF"/>
+                            <constraint firstItem="5fj-e3-uqW" firstAttribute="trailing" secondItem="P03-rx-ciW" secondAttribute="trailing" constant="100" id="PdW-2w-66w"/>
                             <constraint firstItem="QUd-3s-pUX" firstAttribute="leading" secondItem="5fj-e3-uqW" secondAttribute="leading" constant="30" id="b1p-B6-2ke"/>
                             <constraint firstItem="QUd-3s-pUX" firstAttribute="centerY" secondItem="rPV-em-h04" secondAttribute="centerY" id="vnW-Ym-JPg"/>
                         </constraints>
@@ -68,7 +106,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rp6-64-QIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23" y="723"/>
+            <point key="canvasLocation" x="-1026" y="719"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sP4-B3-Xub">
+            <objects>
+                <viewController id="fvG-kK-EH3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v0k-Bc-9fT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTRO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcE-60-iqz">
+                                <rect key="frame" x="121" y="425.5" width="172" height="45"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Iwr-Rb-hSy"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="JcE-60-iqz" firstAttribute="centerX" secondItem="v0k-Bc-9fT" secondAttribute="centerX" id="5Qt-Ke-mTw"/>
+                            <constraint firstItem="JcE-60-iqz" firstAttribute="centerY" secondItem="v0k-Bc-9fT" secondAttribute="centerY" id="Ck9-UX-LmG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pF0-bL-aYX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dP-Zs-yE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="719"/>
         </scene>
     </scenes>
     <resources>
@@ -78,8 +145,14 @@
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
