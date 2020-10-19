@@ -11,7 +11,8 @@
         <!--Navigation Controller-->
         <scene sceneID="MBl-zT-el1">
             <objects>
-                <navigationController id="Vvo-Hc-sBk" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="currentContext" id="Vvo-Hc-sBk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XWx-WP-fPU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nwr-83-WwC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -47,6 +48,9 @@
                             <constraint firstItem="iAZ-ZT-0gg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v5D-SR-N3K"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Vvo-Hc-sBk" kind="show" identifier="goToLogin" id="0M0-oE-peI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,11 +61,11 @@
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="N1R-mx-cwZ" customClass="LoginViewController" customModule="boilerplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rPV-em-h04">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="QUd-3s-pUX">
-                                <rect key="frame" x="30" y="319" width="354" height="258"/>
+                                <rect key="frame" x="30" y="292" width="354" height="258"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0J-Jv-TNK">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
@@ -80,7 +84,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P03-rx-ciW">
-                                <rect key="frame" x="100" y="776" width="214" height="56"/>
+                                <rect key="frame" x="100" y="722" width="214" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="yff-pe-t62"/>
                                 </constraints>
@@ -113,11 +117,11 @@
             <objects>
                 <viewController id="fvG-kK-EH3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v0k-Bc-9fT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTRO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcE-60-iqz">
-                                <rect key="frame" x="121" y="425.5" width="172" height="45"/>
+                                <rect key="frame" x="121" y="398.5" width="172" height="45"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
