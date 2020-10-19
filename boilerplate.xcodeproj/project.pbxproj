@@ -15,6 +15,10 @@
 		D86CF539253E07EB00C97A79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86CF537253E07EB00C97A79 /* LaunchScreen.storyboard */; };
 		D86CF544253E07EB00C97A79 /* boilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CF543253E07EB00C97A79 /* boilerplateTests.swift */; };
 		D86CF54F253E07EB00C97A79 /* boilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CF54E253E07EB00C97A79 /* boilerplateUITests.swift */; };
+		D86CF561253E083900C97A79 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CF560253E083900C97A79 /* SplashViewController.swift */; };
+		D86CF569253E089100C97A79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CF568253E089100C97A79 /* LoginViewController.swift */; };
+		D86CF56E253E08D900C97A79 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CF56D253E08D900C97A79 /* RegisterViewController.swift */; };
+		D86CF573253E091600C97A79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CF572253E091600C97A79 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		D86CF54A253E07EB00C97A79 /* boilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boilerplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86CF54E253E07EB00C97A79 /* boilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boilerplateUITests.swift; sourceTree = "<group>"; };
 		D86CF550253E07EB00C97A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86CF560253E083900C97A79 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D86CF568253E089100C97A79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D86CF56D253E08D900C97A79 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D86CF572253E091600C97A79 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,8 @@
 		D86CF52B253E07EA00C97A79 /* boilerplate */ = {
 			isa = PBXGroup;
 			children = (
-				D86CF52C253E07EA00C97A79 /* AppDelegate.swift */,
-				D86CF52E253E07EA00C97A79 /* SceneDelegate.swift */,
+				D86CF577253E096A00C97A79 /* Application */,
+				D86CF55F253E081200C97A79 /* Vistas */,
 				D86CF530253E07EA00C97A79 /* ViewController.swift */,
 				D86CF532253E07EA00C97A79 /* Main.storyboard */,
 				D86CF535253E07EB00C97A79 /* Assets.xcassets */,
@@ -126,6 +134,26 @@
 				D86CF550253E07EB00C97A79 /* Info.plist */,
 			);
 			path = boilerplateUITests;
+			sourceTree = "<group>";
+		};
+		D86CF55F253E081200C97A79 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				D86CF560253E083900C97A79 /* SplashViewController.swift */,
+				D86CF568253E089100C97A79 /* LoginViewController.swift */,
+				D86CF56D253E08D900C97A79 /* RegisterViewController.swift */,
+				D86CF572253E091600C97A79 /* HomeViewController.swift */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		D86CF577253E096A00C97A79 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D86CF52C253E07EA00C97A79 /* AppDelegate.swift */,
+				D86CF52E253E07EA00C97A79 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +289,10 @@
 				D86CF531253E07EA00C97A79 /* ViewController.swift in Sources */,
 				D86CF52D253E07EA00C97A79 /* AppDelegate.swift in Sources */,
 				D86CF52F253E07EA00C97A79 /* SceneDelegate.swift in Sources */,
+				D86CF56E253E08D900C97A79 /* RegisterViewController.swift in Sources */,
+				D86CF569253E089100C97A79 /* LoginViewController.swift in Sources */,
+				D86CF573253E091600C97A79 /* HomeViewController.swift in Sources */,
+				D86CF561253E083900C97A79 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
